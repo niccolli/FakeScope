@@ -12,4 +12,11 @@ Please install by following command before running the server.
 	gem install em-websocket  
 	gem install em-serialport
 
+### Start the server
+	ruby SerialServer.rb
+
+The script will start watching serial port. When the first WebSocket client appears, Arduino is reseted and start streaming.
+
+If you want to stop the server, please type Ctrl-C.
+
 
