@@ -1,7 +1,7 @@
 FakeScope
 ======================
 HTML Oscilloscope for Arduino.  
-Powered by Ruby/EventMachine, WebSocket and [flotr2](http://www.humblesoftware.com/flotr2/index)(Graph drawing library w/ Canvas).
+Powered by Ruby/EventMachine, WebSocket and HTML5 Canvas.
 
 Usage
 ----------------------
@@ -25,3 +25,14 @@ Buffering of SerialServer.rb is poor a little. Therefore, a part of graph line w
 
 The baudrate is set 9600bps. If you set the baudrate more faster, the time between each point is shorter a little. I think that it's enough to set 9600bps.
 
+Gratitude
+---------------------
+### em-serialport
+[https://github.com/railsbob/em-serialport](https://github.com/railsbob/em-serialport)  
+Serialport extention for EventMachine.
+### em-websocket
+[https://github.com/igrigorik/em-websocket](https://github.com/igrigorik/em-websocket)  
+WebSocket extention for EventMachine.
+### flotr2
+[http://www.humblesoftware.com/flotr2/index](http://www.humblesoftware.com/flotr2/index)  
+HTML5 graph drawing library based on Canvas. Written in JavaScript.
