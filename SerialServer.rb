@@ -14,12 +14,16 @@ EM.run do
 	# 文字列バッファ
 	@serialBuffer = ''
 	serial.on_data do |data|
+		# バッファに流し込む
 		@serialBuffer = @serialBuffer + data
+		# 改行で分割
 		tempAry = @serialBuffer.split
-		#puts tempAry.length
+		# 改行が含まれていたら
 		if tempAry.length >= 2 then
-			@serialBuffer = tempAry[1]
+			# 改行の手前はWebSocketへ
 			@channel.push(tempAry[0])
+			# 改行の後ろはバッファに戻す
+			@serialBuffer = tempAry[1]
 		end
 	end
 	
