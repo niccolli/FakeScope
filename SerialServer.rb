@@ -29,7 +29,11 @@ EM.run do
 	
 	EM::WebSocket.start(:host => '0.0.0.0', :port => 8080, :debug => true) do |ws|
 		ws.onopen {
-			@channel.subscribe { |msg| ws.send msg }
+			sid = @channel.subscribe { |msg| ws.send msg }
+			# 切断時の処理に接続時のIDが必要になるのでここで
+			ws.onclose {
+				@channel.unsubscribe(sid)
+			}
 		}
 	end
 end
