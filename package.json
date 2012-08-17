@@ -2,7 +2,8 @@
 	"name"		:	"ArduinoHost",
 	"version"	:	"0.0.1",
 	"dependencies":	{
-		"socket.io-client"	:	"*",
-		"serialport":	"*"
+		"socket.io"	:	"*",
+		"serialport":	"*",
+		"express"	:	"3.x"
 	}
 }
