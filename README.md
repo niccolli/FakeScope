@@ -2,6 +2,7 @@ FakeScope
 ======================
 HTML Oscilloscope for Arduino.  
 Powered by Ruby/EventMachine, WebSocket and HTML5 Canvas.
+Node.js
 
 Usage
 ----------------------
