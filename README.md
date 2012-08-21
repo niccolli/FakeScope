@@ -6,8 +6,8 @@ Powered by Node.js, WebSocket/Socket.io and HTML5 Canvas.
 Usage
 ----------------------
 ### Preparation
-Server script **SerialServer.js** uses [em-websocket](https://github.com/igrigorik/em-websocket) and [em-serialport](https://github.com/railsbob/em-serialport).  
-Please install by following command before running the server.
+Server script **app.js** uses [express](http://expressjs.com/), [serialport](https://github.com/voodootikigod/node-serialport) and [Socket.IO](http://socket.io/).  
+Please install these modules by following command before running the server.
 
 	npm install
 
