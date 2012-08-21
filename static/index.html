@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<title>RealTime - FakeScope</title>
+		<meta charset="UTF-8" />
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+	</head>
+	<body>
+		<div class="page-header">
+			<h1>RealTime</h1>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div id="graphDiv" class="span8" style="height: 400px;"></div>
+				<div class="span4">
+					<h2>About</h2>
+					<a href="http://www.flickr.com/photos/36571434@N03/6880945602/" title="IMG_0940 by Yusuke ********, on Flickr"><img src="http://farm8.staticflickr.com/7248/6880945602_0ecf132f80_n.jpg" width="320" height="240" alt="IMG_0940"></a>
+					<p>Streaming the vibration wave of sound from iPhone. For more details, please read <a href="http://log.niccol.li/2012/03/eventmachinehtml5.html">http://log.niccol.li/2012/03/eventmachinehtml5.html</a> or <a href="http://log.niccol.li/2012/03/blog-post.html">http://log.niccol.li/2012/03/blog-post.html</a>.</p>
+					<div id="datasource" class="alert alert-error" style="display:none;">
+						<h4 class="alert-heading">Stopped</h4>
+						Data source is not working.
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="/js/flotr2.js"></script>
+		<script type="text/javascript" src="/js/index.js"></script>
+	</body>
+</html>
+
