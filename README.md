@@ -12,7 +12,7 @@ Please install these modules by following command before running the server.
 	npm install
 
 ### Start the server
-	node SerialServer.js
+	node app.js
 
 The script will start watching serial port. When the first WebSocket client appears, Arduino is reseted and start streaming.
 
