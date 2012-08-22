@@ -19,7 +19,6 @@ var SerialPort = serialport.SerialPort;
 // シリアルポートの設定
 // Configuration of serial port
 var sp = new SerialPort('/dev/tty.usbmodem1411', {
-//var sp = new SerialPort('/dev/tty.usbserial-A6008iDi', {
 	parser: serialport.parsers.readline("\r\n"),
 	baudrate: 9600,
 	databits: 8,
@@ -38,7 +37,6 @@ sio.on('connection', function(socket){
 	// シリアルポートにデータが来たときに
 	// Arrived the data on serial port
 	sp.on('data', function(data){
-		//console.log(data);
 		socket.emit('push', data);
 	});
 });
